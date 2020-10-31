@@ -1,0 +1,26 @@
+<html>
+<head><title>JAVA SCRIPT CALCULATOR</title><style>span{color:red}</style></head>
+<body>
+    <H1 align="center">JAVA SCRIPT CALCULATOR</H1>
+    <button onclick="calculateit();"> click here to proceed with calculator </button>
+    <p id="info"></p>
+<SCript>
+    
+    function calculateit()
+    {
+        var a1 = prompt("Hey user,Enter The Value Of a ","enter a value Here");
+        var b1 = prompt("Hey user,Enter The Value Of b ","enter b value Here");
+        var a = Number(a1);
+        var b = Number(b1);
+        var addition = a+b;
+        var substraction = a-b;
+        var multiplication = a*b;
+        var division = a/b;
+    
+        document.getElementById("info").innerHTML="computed values are" +'<br>addition='+addition+'<br>'+'<br>substraction='+substraction+'<br>'+
+                                                '<br>multiplication='+multiplication+'<br>'+'<br>division='+division+'<br>'+"end";
+        document.getElementById("info").style.backgroundColor="yellow";
+    }
+</SCript>
+</body>
+</html>

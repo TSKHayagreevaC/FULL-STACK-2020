@@ -1,0 +1,70 @@
+<html>
+<head><title> J S FORM VALIDATION </title></head>
+<body>
+<h1 align="center"> APPLICATION FORM </h1>
+<marquee direction="right"><h1><img src="C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\images\veena.png" height="50px" width="50px">
+FILL FOLLOWING DETAILS <img src="C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\images\veena.png" height="50px" width="50px"></h1></marquee>
+<form action="C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\HTML\success.html" name="f1" onsubmit="return validateforms();">
+FIRST NAME:<input type="text" name="fname"><br><br>
+MIDDLE NAME:<input type="text" name="mlname" id="mnme"><br><br>
+LAST NAME:<input type="text" name="lname"><br><br>
+FATHER'S NAME:<input type="text" name="frname"> * <br><br>
+MOTHER'S NAME:<input type="text" name="mrname"> * <br><br>
+GRADUATION:<select name="degree">
+<option value=""> SELECT DEGREE </option>
+<option value="b.sc.">B.SC.</option>
+<option value="b.com.">B.COM.</option>
+<option value="b.a.">B.A.</option>
+<option value="b.tech.">B.TECH.</option>
+<option value="b.e.">B.E.</option>
+</select><br><br>
+UPLOAD DEGREE CERTIFICATE:<input type="file"><br><br>
+PRICE:<input type="range" min="10000" max="100000" name="price"><br><br>
+USERNAME:<input type="email" name="email"> 
+PASSWORD:<input type="password" name="pswd">
+DATE OF BIRTH:<input type="date" name="DOB">(DD-MM-YYYY)<br><br>
+MOBILE NUMBER:<input type="number" name="phno"><br><br>
+GENDER:  MALE <input type="radio" value="MAN" name="gender"> FEMALE<input type="radio" value="WOMAN" name="gender"><br><br>
+MARITAL STATUS: MARRIED <input type="radio" value="mar" name="marr"> UNMARRIED<input type="radio" value="umar" name="marr" ><br><br>
+ADDRESS FOR CORRESPONENCE:<br><textarea rows="10" cols="30"></textarea><br>
+PERMANENT ADDRESS:<br><textarea rows="10" cols="30"></textarea><br><br>
+DESCRIBE YOURSELF:<br><textarea rows="10" cols="30"></textarea><br><br>
+UPLOAD PHOTO:<input type="file"> UPLOAD SIGNATURE:<input type="file"><br><br>
+TERMS AND CONDITIONS:<br><p>Terms and conditionsTerms and conditionsTerms and conditionsTerms and conditionsTerms and conditions<br>
+Terms and conditionsTerms and conditionsTerms and conditionsTerms and conditionsTerms and conditions<br>
+Terms and conditionsTerms and conditionsTerms and conditionsTerms and conditionsTerms and conditions.</p>
+ACCEPT TERMS AND CONDITIONS:<input type="checkbox" required><br><br>
+<h3 id="errmsg"></h3>
+<h3 id="erromsg"></h3>
+<h3 id="errormsg"></h3>
+<input type="reset"><input type="submit" onclick="validateform();">
+</form>
+<script>
+    function validateforms()
+    {
+    var fn=document.forms["f1"][name="fname"].value;
+    var ln=document.forms["f1"][name="lname"].value;
+    var frn=document.forms["f1"][name="frname"].value;
+    var mrn=document.forms["f1"][name="mrname"].value;
+    var mobno=document.forms["f1"][name="phno"].value;
+    var pwd=document.forms["f1"][name="pswd"].value;
+        if(fn==null || fn==""){alert("First Name Can Not Be Empty..."); return false;}
+        if(ln==null || ln==""){alert("Last Name Can Not Be Empty..."); return false;}
+        if (frn==null || frn==""|| mrn==null || mrn==""){alert("Mandatory Fields (*) Can Not Be Empty..."); return false;}
+        if(mobno.length !=10){alert("Mobile Number Should Be Filled With Exactly Ten Digits..."); return false;}
+        if(pwd.length<8)
+            {document.getElementById("errmsg").innerHTML="password should include Eight Characters..." ;
+            document.getElementById("errmsg").style.color="red";return false;}
+        if(pwd.indexOf('@')==-1 && pwd.indexOf('#')==-1 && pwd.indexOf('$')==-1)
+            {document.getElementById("erromsg").innerHTML="password shall include one of three symbols like @,#,$ " ;
+            document.getElementById("erromsg").style.color="red";return false;}
+        if(pwd.indexOf('0')==-1 && pwd.indexOf('1')==-1 && pwd.indexOf('2')==-1 && pwd.indexOf('3')==-1 && pwd.indexOf('4')==-1 && 
+           pwd.indexOf('5')==-1 && pwd.indexOf('6')==-1 && pwd.indexOf('7')==-1 && pwd.indexOf('8')==-1 && pwd.indexOf('9')==-1)
+            {document.getElementById("errormsg").innerHTML="password shall include at least one digit..." ;
+            document.getElementById("errormsg").style.color="red"; return false;}                    
+    }
+    function validateform(){var mn= document.getElementById("mnme").value; if(mn == null || mn == ""){alert("Middle Name Is Empty...");}}
+        
+</script>
+</body>
+</html>

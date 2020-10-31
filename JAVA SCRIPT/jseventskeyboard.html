@@ -1,0 +1,64 @@
+<html>
+<head>
+<title> Java Script Key Board Related Events </title>
+<style>
+	body{background-color:yellow; font-family:Ink Free; font-size:20px;}
+	h1,h2,h3,h4,h5,h6{color:blue; font-family:Segoe Script;}
+</style>
+</head>
+<body>
+<marquee direction="right" style="color:red" > Well Come to Webpage By a Full Stack Developer...</marquee>
+
+<h1 align="center"> KEY BOARD RELATED EVENTS </h1>
+
+<h2> onkeypress-alert </h2>
+enter text here: <input  type="text" onkeypress="alert('key is pressed')"><br><br>
+
+<h2> onkeyup-alert </h2>
+enter text here: <input  type="text" onkeyup="alert('key is up')"><br><br>
+
+<h2> onkeydown-alert </h2>
+enter text here: <input  type="text" onkeydown="alert('key is down')"><br><br>
+
+<h2> onkeypress-function </h2>
+enter text here: <input  type="text" onkeypress="abc();"><br><br>
+enter text here: <input  type="text" onkeypress="greeting();"><br><br>
+enter text here: <input  type="text" onkeypress="greeting('Ramu');"><br><br>
+enter text here: <input  type="text" onkeypress="greeting('usrename');"><br><br>
+
+
+<h2> onkeyup-function </h2>
+enter text here: <input  type="text" onkeyup="abc();"><br><br>
+enter text here: <input  type="text" onkeyup="greeting();"><br><br>
+enter text here: <input  type="text" onkeyup="greeting('Ramu');"><br><br>
+enter text here: <input  type="text" onkeyup="greeting('usrename');"><br><br>
+
+<h2> onkeydown-function </h2>
+enter text here: <input  type="text" onkeydown="abc();"><br><br>
+enter text here: <input  type="text" onkeydown="greeting();"><br><br>
+enter text here: <input  type="text" onkeydown="greeting('Ramu');"><br><br>
+enter text here: <input  type="text" onkeydown="greeting('usrename');"><br><br>
+
+<script>
+function abc()
+{
+console.log("welcome to abc function");
+alert("welcome to function");
+}
+//abc();//
+
+var username="suresh";
+function greeting(person)
+{
+console.log("hi "+person+" welcome to greeting function");
+alert("hi "+person+" welcome to greeting function");
+}
+//greeting();//
+//greeting(username);//
+//greeting("ravi");//	
+
+console.log(" The End");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Github project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="profile"></div>
+
+    <script>
+        function getprofile()
+        {
+            var username = 'TSKHayagreevaC';
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function()
+            {
+                if(xhttp.readyState == 4 && xhttp.status == 200)
+                {
+                    var user = JSON.parse(xhttp.responseText);
+                    document.getElementById('profile').innerHTML = user;
+                }
+            }
+            xhttp.open('GET', 'https://github.com/'+username, true);
+            xhttp.send();
+        }
+
+        getprofile();
+
+    </script>
+    
+</body>
+</html>

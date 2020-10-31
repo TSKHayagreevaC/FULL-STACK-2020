@@ -1,0 +1,64 @@
+<html>
+<head>
+<title> Java Script Mouse Related Events </title>
+<style>
+	body{background-color:yellow; font-family:Ink Free; font-size:20px;}
+	h1,h2,h3,h4,h5,h6{color:blue; font-family:Segoe Script;}
+</style>
+</head>
+<body>
+<marquee direction="right" style="color:red" > Well Come to Webpage By a Full Stack Developer...</marquee>
+
+<h1 align="center"> MOUSE RELATED EVENTS </h1>
+
+<h4> onclick or single click buttons</h4>
+<button onclick="greeting(username);"> greeting </button>
+<button onclick="greeting('Ramu');"> greeting </button>
+<button onclick="abc();"> abc function </button>
+
+<h4> ondblclick or double click buttons</h4>
+<button ondblclick="greeting(username);"> greeting </button>
+<button ondblclick="greeting('Ramu');"> greeting </button>
+<button ondblclick="abc();"> abc function </button>
+
+<h4> onclick or single click heading h1 </h4>
+<h1 onclick=" alert('welcome to website on h1 onclick '); ">HEADING</h1>
+
+<h4> ondblclick or double click heading h2 </h4>
+<h2 ondblclick=" alert('welcome to website on h2 dblclick '); ">HEADING </h2>
+
+<h4> onmouseenter or hovering on heading h3 </h4>
+<h3 onmouseenter=" alert('welcome to website on h3 onmouseenter '); ">HEADING</h3>
+
+<h4> onmouseleave or leaving the heading h4 </h4>
+<h4 onmouseleave=" alert('welcome to website on h4 onmouseleave '); ">HEADING</h4>
+
+<h4> onmouseup or leave-click the heading h5 </h4>
+<h5 onmouseup=" alert('welcome to website on h5 onmouseup'); ">HEADING</h5>
+
+<h4> onmousedown or start-click the heading h5 </h4>
+<h6 onmousedown=" alert('welcome to website on h6 on mousedown'); ">HEADING</h6>
+
+<script>
+function abc()
+{
+console.log("welcome to abc function");
+alert("welcome to function");
+}
+//abc();//
+
+var username="suresh";
+function greeting(person)
+{
+console.log("hi "+person+" welcome to greeting function");
+alert("hi "+person+" welcome to greeting function");
+}
+//greeting();//
+//greeting(username);//
+//greeting("ravi");//	
+
+console.log(" The End");
+</script>
+
+</body>
+</html>

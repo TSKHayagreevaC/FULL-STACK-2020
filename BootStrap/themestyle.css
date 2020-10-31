@@ -1,0 +1,14 @@
+.jumbotron{
+    background: yellow;
+    color:blue;
+    border-bottom-width: 2px;   
+}
+.container{
+    padding: 0px 10px 10px 0px;
+    margin: 10px 10px 10px 10px;
+}
+.navbar{
+    margin: 10px 10px 10px 10px;
+    background-color: pink;
+
+}

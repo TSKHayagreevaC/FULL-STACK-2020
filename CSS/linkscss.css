@@ -1,0 +1,14 @@
+h1 { color:red;
+	font-size:100px;
+	 }
+
+a{font-color:none;
+	text-decoration:none;
+	line-height:5;
+	text-shadow:50px 50px grey;
+	font-size:50px;
+	}
+a:link{color:blue;}
+a:visited{color:green;}
+a:hover{color:red;}
+a:active{color:yellow;}

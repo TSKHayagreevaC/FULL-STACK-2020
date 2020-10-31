@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <title>svg tag| new elements of html5</title>
+    <style>
+        body{background: yellowgreen;
+        color:brown;
+        font-family: Arial;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        ul{
+            padding:0%
+        }
+        #container{
+            background: skyblue;;
+            width: 1400px;
+            margin: 30px auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        nav{
+            height: 40px;
+            background: lightblue;
+        }
+        nav ul{
+            padding-top: 13px;
+            padding-left: 10px;
+        }
+        nav li{
+            list-style: none;
+            float: left;
+            padding-right: 20px;
+        }
+        main{
+            float: left;
+            width: 60%;
+        }
+        aside{
+            float: right;
+            width: 30%;
+            background: lightcoral;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .clr{
+            clear: both;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            background: chocolate;
+            margin-top: 30x;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>my webpage</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="newelementshome.html">home</a></li>
+                <li><a href="newelementsmedia.html">audio</a></li>
+                <li><a href="newelementscanvas.html">canvas</a></li>
+                <li><a href="newelementssvg.html">svg tag</a></li>
+                <li><a href="newelementswebstorage.html">web storage</a></li>
+                <li><a href="newelementsbox.html">drag & drop box</a></li>
+                <li><a href="newelementsgeolocation.html"></a>geolocation</li>
+            </ul>
+        </nav>
+        <main>
+            <svg width="300" height="300">
+                <circle cx="100" cy="200" r="30" stroke="red" stroke.width="4" fill="green" />
+                sorry...,your browser does not support inline svg...
+            </svg>
+            <br>
+            <svg width="400" height="200">
+                <rect width="300" height="100" style="fill: rgb(255, 0,0); stroke-width:1; stroke:rgb(0,0,0)"></rect>
+            </svg>
+            <br>
+            <svg width="300" height="200">
+                <polygon points="100,10,40,198,190,78,10,78,160,198" style="fill: yellow;stroke:black;stroke-width:5;fill-rule:evenodd"></polygon>
+            </svg>
+            <br>
+            <svg width="500" height="130">
+                <ellipse cx="105" cy="70" rx="85" ry="60" fill="black"></ellipse>
+                <text fill="#fff" font-size="45" font-family="Tahoma" x="50" y="86">ellipse</text>
+            </svg>
+        </main>
+        <aside>
+            <h3>sidebar</h3>
+            <p>read this side text.read this side text.
+                read this side text.read this side text.
+                read this side text.read this side text.
+                read this side text.read this side text.
+            </p>
+        </aside>
+        <div class="clr"></div>
+        <footer>
+            <p>copyright &copy: 2020</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

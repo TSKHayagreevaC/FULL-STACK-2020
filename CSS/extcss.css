@@ -1,0 +1,15 @@
+h1{font-family:verdana; font-weight:bold; color:green;}
+h2{text-transform:lowercase;}
+h3{text-shadow:10px 10px pink;}
+p { color:green;
+	font-color:blue; 
+	font-family:segoe print;
+	font-eight:normal; 
+	text-decoration:underline; 
+	text-decoration:overline; 
+	text-decoration:line-through;
+	text-transform:lowercase;
+	line-height:1.5;
+	word-spacing:5px;
+	letter-spacing:5px;}
+body { background-color:silver;}

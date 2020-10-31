@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>ajax project</title>
+</head>
+<body>
+    <h1>Change Text</h1>
+    <h2 id="maintext"> This text is going to be changed.</h2>
+    <button onclick="changetext();">changetext</button>
+
+    <script>
+        function changetext()
+        {
+           var xhttp = new XMLHttpRequest();
+           xhttp.onreadystatechange = function()
+           {
+               if(xhttp.readyState == 4 && xhttp.status == 200)
+               {
+                console.log(xhttp.responseText);
+                document.getElementById('maintext').innerHeight = xhttp.responseText;
+               }
+           }
+           xhttp.open('GET', 'C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\AJAX\ajaxtext.txt', true);
+           xhttp.send();
+        }
+    </script>
+</body>
+</html>

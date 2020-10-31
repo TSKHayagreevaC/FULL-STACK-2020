@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <title>pseudo classes css</title>
+    <style>
+        a:hover{
+            color: red;
+            font-weight: bold;
+        }
+        a:active{
+            color: green;
+            font-weight: bold;
+        }
+        .myform input:focus{
+            background-color: pink;
+            width: 300px;
+        }
+        .mylist li:first-child{
+            color: red;
+            font-weight: bold;
+        }
+        .mylist li:last-child{
+            color: blue;
+            font-weight: bold;
+        }
+        .mylist li:nth-child(3){
+            color: orange;
+            font-weight: bold;
+        }
+        .mylist li:nth-child(3n+1){
+            color: orange;
+            font-weight: bold;
+        }
+        .mylist li:nth-child(even){
+            color: blue;
+            font-weight: bold;
+        }
+        .mylist li:nth-child(even){
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">click me</a>
+
+    <form class="myform">
+        <input type="text" name="" id="">
+    </form>
+    <ul class="mylist">
+        <li>red</li>
+        <li>green</li>
+        <li>blue</li>
+        <li>pink</li>
+        <li>yellow</li>
+        <li>black</li>
+        <li>white</li>
+    </ul>
+</body>
+</html>

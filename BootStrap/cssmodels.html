@@ -1,0 +1,133 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equ="X-UA-Compatible" content="IE=edge">
+    <title>css grid</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exaple of model</h1>
+        <button class="btn btn-primary btn-lg data-toggle=modal"
+         data-toggle="modal" data-target="#myModal">
+        click me
+        </button>
+        
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close"
+                         data-dismiss="modal"></button>
+                         <h4 class="modal-title" id="myModalLabel">
+                             Modal Title
+                         </h4>
+                    </div>
+                    <div class="modal-body">
+                        This Is The Modal Body...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            close
+                        </button>
+                        <button class="btn btn-primary">
+                            save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <h1>Example of Drop Down</h1>
+        <div class="dropdown">
+            <button type="button" class="btn btn-secondary 
+            dropdown-toggle" id="dropdownMenu1"
+            data-toggle="dropdown">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li role="separator" class="divide"></li>
+                <li><a href="#">link</a></li>
+            </ul> 
+        </div>
+
+        <br><br>
+
+        <h1>Tab Menu</h1>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#tab1" role="tab"
+                data-toggle="tab">Home</a>
+            </li>
+            <li>
+                <a href="#tab2" role="tab"
+                data-toggle="tab">Messages</a>
+            </li>
+            <li class="active">
+                <a href="#tab3" role="tab"
+                data-toggle="tab">Profile</a>
+            </li>
+        </ul>
+
+        <h1>Tab Content</h1>
+
+        <div class="tab-content">
+            <div role="tabpane1" class="tab-pane active"
+            id="tab1">
+                This Is Tab 1...
+            </div>
+            <div role="tabpane1" class="tab-pane"
+            id="tab2">
+                This Is Tab 2...
+            </div>
+            <div role="tabpane1" class="tab-pane"
+            id="tab3">
+                This Is Tab 3...
+            </div>
+        </div>
+
+        <br><br>
+
+        <h1>Tool Tip</h1>
+        <button type="button" class="btn btn-default"
+        data-toggle="tooltip" data-placement="top"
+         title="This Is A Tool Tip">
+            click here
+        </button>
+
+        <br><br>
+
+        <h1>Pop Over</h1>
+        <button type="button" class="btn btn-default"
+        data-toggle="popover" 
+        data-content="Here Is Your POpover Text"
+         title="This Is popover title">
+            click here
+        </button>
+
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.js"
+    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+      <script src="bootstrap.js"></script>
+      <script>
+          $("[data-toggle='tooltip']").tooltip();
+          $("[data-toggle='popover']").popover();
+      </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+<head><title> ADDING FORMS TO THE WEBPAGE </title></head>
+<style>
+
+	body{border:solid 20px;
+		background-color:yellow;
+		color:blue;}
+	fieldset{color:red;}
+	#RRR{color:green;}
+	textarea{color:red;}
+	#marquee{color:red;}
+</style>
+<body>
+<h1 align="center"> APPLICATION FORM </h1>
+<marquee direction="right"><h1 id="marquee"><img src="C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\images\veena.png" height="50px" width="50px"> FILL FOLLOWING DETAILS <img src="C:\Users\SRIKANTH HAYAGREEVA\Onedrive\Desktop\FULL STACK 2020\images\veena.png" height="50px" width="50px"></h1></marquee>
+<form action="success.html">
+
+<fieldset id="RRR">
+<legend align="center"> PART-I </legend>
+FIRST NAME:<input type="text" name="fname" required placeholder="first name" >
+LAST NAME:<input type="text" name="lname"><br><br>
+FATHER'S NAME:<input type="text" name="fname"><br><br>
+MOTHER'S NAME:<input type="text" name="mname"><br><br>
+</fieldset>
+
+<fieldset>
+<legend align="center"> PART-II </legend>
+GRADUATION:<select name="degree">
+<option value=""> SELECT DEGREE </option>
+<option value="b.sc.">B.SC.</option>
+<option value="b.com.">B.COM.</option>
+<option value="b.a.">B.A.</option>
+<option value="b.tech.">B.TECH.</option>
+<option value="b.e.">B.E.</option>
+</select><br><br>
+UPLOAD DEGREE CERTIFICATE:<input type="file"><br><br>
+</fieldset>
+
+<fieldset>
+<legend align="center"> PART-III </legend>
+PRICE:<input type="range" min="10000" max="100000" name="price"><br><br>
+USERNAME:<input type="email" name="email"> PASSWORD:<input type="password" name="pswd"><br><br>
+DATE OF BIRTH:<input type="date" name="DOB">(DD-MM-YYYY)<br><br>
+MOBILE NUMBER:<input type="number" min="6000000000" max="10000000000" name="phno"><br><br>
+GENDER:  MALE <input type="radio" value="MAN" name="gender"> FEMALE<input type="radio" value="WOMAN" name="gender"><br><br>
+MARITAL STATUS: MARRIED <input type="radio" value="mar" name="marr"> UNMARRIED<input type="radio" value="umar" name="marr" ><br><br>
+ADDRESS FOR CORRESPONENCE:<br><textarea rows="10" cols="30"></textarea><br>
+PERMANENT ADDRESS:<br><textarea rows="10" cols="30"></textarea><br><br>
+DESCRIBE YOURSELF:<br><textarea rows="10" cols="30"></textarea><br><br>
+</fieldset>
+
+<fieldset>
+<legend align="center"> PART-IV </legend>
+UPLOAD PHOTO:<input type="file"> UPLOAD SIGNATURE:<input type="file"><br><br>
+TERMS AND CONDITIONS:<br><p>Terms and conditionsTerms and conditionsTerms and conditionsTerms and conditionsTerms and conditions<br>
+Terms and conditionsTerms and conditionsTerms and conditionsTerms and conditionsTerms and conditions<br>
+Terms and conditionsTerms and conditionsTerms and conditionsTerms and conditionsTerms and conditions.</p>
+ACCEPT TERMS AND CONDITIONS:<input type="checkbox" required><br><br>
+<input type="reset"><input type="submit">
+</fieldset>
+</form>
+</body>
+</html>

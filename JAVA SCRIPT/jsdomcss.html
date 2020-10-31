@@ -1,0 +1,257 @@
+<html>
+<head>
+<title> JS DOM CSS </title>
+</head>
+<body>
+<marquee direction="right"><h1> Java Script Document Object Model Cascading Style Sheet </h1></marquee>
+
+<h2> CSS CHANGES TO WEBPAGE BY BUTTONS USING JS DOM </h2><br>
+
+<button onclick="pinkbackground();"> Pink BackGround </button>
+<button onclick="yellowbackground();"> yellow BackGround </button>
+<button onclick="skybluebackground();"> Sky Blue BackGround </button><br>
+
+<button onclick="bgredcolor();"> Red Color BackGround </button>
+<button onclick="bggreencolor();"> Green BackGround </button>
+<button onclick="bgbluecolor();"> Blue BackGround </button><br>
+
+<button onclick="redcolor();"> Red Color Fonts </button>
+<button onclick="greencolor();"> Green Color Fonts </button>
+<button onclick="bluecolor();"> Blue Color Fonts </button> 
+
+<h2> CSS CHANGES TO WEBPAGE THROUGH TEXT ENTERED AND BUTTONS BY THE USER USING JS DOM </h2>
+
+<h4> ENTER BACKGROUND COLOR:</h4><input type= "text" id="bgc"><button onclick="inputbgcolor();"> CHANGE </button>
+<h4> ENTER TEXT COLOR:</h4><input type= "text" id="tc"><button onclick="inputtextcolor();"> CHANGE </button>
+
+<h2> CSS CHANGES TO WEBPAGE THROUGH TEXT ENTERED BY THE USER USING JS DOM </h2>
+
+<h3> ENTER BACKGROUND COLOR:</h3>	<input type= "text" id="ipbgc" onchange="inputbgcolor();">
+<h3> ENTER TEXT COLOR:</h3>		<input type= "text" id="iptc" onchange="inputtextcolor();">
+<h3> ENTER TEXT SIZE:</h3>		<input type= "text" id="ipts" onchange="inputtextsize();">
+<h3>INPUT TEXT FAMILY:</h3>		<input type="text" id="iptf" onchange="inputtextfamily();">
+
+<h2> CSS CHANGES TO WEBPAGE THROUGH TEXT AND ONE BUTTON OPTED BY THE USER USING JS DOM </h2>
+
+<h4> ENTER BACKGROUND COLOR:</h4>	<input type= "text" id="ipbgcb">
+<h4> ENTER TEXT COLOR:</h4>		<input type= "text" id="iptcb">
+<h4> ENTER TEXT SIZE:</h4>		<input type= "text" id="iptsb">
+<h4>SELECT THE TEXT FAMILY:</h4>		<select id="iptfb">	
+					<option value="---select---">---select---</option>					
+					<option value="calibri">calibri</option>
+					<option value="Comic Sans MS">Comic Sans MS</option>
+					<option value="Segoe Script">Segoe Script</option>
+					<option value="Gabriola">Gabriola</option>
+					<option value="Ink Free">Ink Free</option>
+					<option value="MV Boli">MV Boli</option>
+					<option value="Small Fonts">Small Fonts</option>
+					</select><br><br>
+<h4>SELECT THE TEXT FORMAT:</h4>	<select id="ipttfb">	
+					<option value="---select---">---select---</option>					
+					<option value="uppercase">uppercase</option>
+					<option value="lowercase">lowercase</option>
+					<option value="capitalize">capitalize</option>
+					</select>
+<button onclick="applychanges();"> Click Here To Apply Changes </button>
+
+<h2> CSS CHANGES TO HEADINGS BY IDs AND BUTTONS USING JS DOM </h2>
+
+<button onclick="bgcolorchangeh1();"> Yellow BackGround to h1 </button><button onclick="colorchangeh1();"> Red color to h1 </button><br>
+<button onclick="bgcolorchangeh2();"> Yellow BackGround to h2 </button><button onclick="colorchangeh2();"> Red color to h2 </button><br>
+<button onclick="bgcolorchangeh3();"> Yellow BackGround to h3 </button><button onclick="colorchangeh3();"> Red color to h3 </button><br>
+<button onclick="bgcolorchangeh4();"> Yellow BackGround to h4 </button><button onclick="colorchangeh4();"> Red color to h4 </button><br>
+<button onclick="bgcolorchangeh5();"> Yellow BackGround to h5 </button><button onclick="colorchangeh5();"> Red color to h5 </button><br>
+<button onclick="bgcolorchangeh6();"> Yellow BackGround to h6 </button><button onclick="colorchangeh6();"> Red color to h6 </button>
+
+<h1 id="d1"> HEADING1 or H1 </h1>
+
+<h2 id="d2"> HEADING2 or H2 </h2>
+
+<h3 id="d3"> HEADING3 or H3 </h3>
+
+<h4 id="d4"> HEADING4 or H4 </h4>
+
+<h5 id="d5"> HEADING5 or H5 </h5>
+	
+<h6 id="d6"> HEADING6 or H6 </h6>
+
+<h2> CSS CHANGES TO PRAGRAPHS BY IDs AND BUTTONS USING JS DOM </h2>
+
+<button onclick="bgcolorchangep1();"> Yellow BackGround to P1 </button><button onclick="colorchangep1();"> Red color to P1 </button>
+<br><br>
+<p1 id="p1">
+<ul><li>paragraph1</li><li>paragraph1</li><li>paragraph1</li><li>paragraph1</li></ul>
+<ol><li>paragraph1</li><li>paragraph1</li><li>paragraph1</li><li>paragraph1</li></ol>
+paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1<br>
+paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1<br>
+paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1<br>
+paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1<br>
+paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1<br>
+paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1 paragraph1 paragrap1
+<ol><li>paragraph1</li><li>paragraph1</li><li>paragraph1</li><li>paragraph1</li></ol>
+<ul><li>paragraph1</li><li>paragraph1</li><li>paragraph1</li><li>paragraph1</li></ul>
+</p1><br><br>
+
+<button onclick="bgcolorchangep2();"> Yellow BackGround to P2 </button><button onclick="colorchangep2();"> Red color to P2 </button>
+<br><br>
+<p2 id="p2">
+<ol><li>paragraph2</li><li>paragraph2</li><li>paragraph2</li><li>paragraph2</li></ol>
+<ul><li>paragraph2</li><li>paragraph2</li><li>paragraph2</li><li>paragraph2</li></ul>
+paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2<br>
+paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2<br>
+paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2<br>
+paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2<br>
+paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2<br>
+paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2 paragraph2 paragrap2
+<ul><li>paragraph2</li><li>paragraph2</li><li>paragraph2</li><li>paragraph2</li></ul>
+<ol><li>paragraph2</li><li>paragraph2</li><li>paragraph2</li><li>paragraph2</li></ol>
+</p2><br><br>
+
+<button onclick="bgcolorchangep3();"> Yellow BackGround to P3 </button><button onclick="colorchangep3();"> Red color to P3 </button>
+<p3 id="p3">
+<ol><li>paragraph3</li><li>paragraph3</li><li>paragraph3</li><li>paragraph3</li></ol>
+<ul><li>paragraph3</li><li>paragraph3</li><li>paragraph3</li><li>paragraph3</li></ul>
+paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3<br>
+paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3<br>
+paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3<br>
+paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3<br>
+paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3<br>
+paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3 paragraph3 paragrap3<br>
+<ul><li>paragraph3</li><li>paragraph3</li><li>paragraph3</li><li>paragraph3</li></ul>
+<ol><li>paragraph3</li><li>paragraph3</li><li>paragraph3</li><li>paragraph3</li></ol>
+</p3>
+
+<script>
+
+function bgcolorchangeh1(){document.getElementById("d1").style.backgroundColor = "yellow" ;}
+function colorchangeh1(){document.getElementById("d1").style.color = "red" ;}
+
+function bgcolorchangeh2(){document.getElementById("d2").style.backgroundColor = "yellow" ;}
+function colorchangeh2(){document.getElementById("d2").style.color = "red" ;}
+
+function bgcolorchangeh3(){document.getElementById("d3").style.backgroundColor = "yellow" ;}
+function colorchangeh3(){document.getElementById("d3").style.color = "red" ;}
+
+function bgcolorchangeh4(){document.getElementById("d4").style.backgroundColor = "yellow" ;}
+function colorchangeh4(){document.getElementById("d4").style.color = "red" ;}
+
+function bgcolorchangeh5(){document.getElementById("d5").style.backgroundColor = "yellow" ;}
+function colorchangeh5(){document.getElementById("d5").style.color = "red" ;}
+
+function bgcolorchangeh6(){document.getElementById("d6").style.backgroundColor = "yellow" ;}
+function colorchangeh6(){document.getElementById("d6").style.color = "red" ;}
+
+function bgcolorchangep1(){document.getElementById("p1").style.backgroundColor = "yellow" ;}
+function colorchangep1(){document.getElementById("p1").style.color = "red" ;}
+
+function bgcolorchangep2(){document.getElementById("p2").style.backgroundColor = "yellow" ;}
+function colorchangep2(){document.getElementById("p2").style.color = "red" ;}
+
+function bgcolorchangep3(){document.getElementById("p3").style.backgroundColor = "yellow" ;}
+function colorchangep3(){document.getElementById("p3").style.color = "red" ;}
+
+function pinkbackground(){document.body.style.backgroundColor = "pink" ;}
+function yellowbackground(){document.body.style.backgroundColor = "yellow" ;}
+function skybluebackground(){document.body.style.backgroundColor = "skyblue" ;}
+
+function bgredcolor()
+{
+document.body.style.backgroundColor = "red" ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function bggreencolor()
+{
+document.body.style.backgroundColor = "green" ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function bgbluecolor()
+{
+document.body.style.backgroundColor = "blue" ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function redcolor()
+{
+document.body.style.color = "red" ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function greencolor()
+{
+document.body.style.color = "green" ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function bluecolor()
+{
+document.body.style.color = "blue" ;
+if(document.body.style.backgroundColor==document.body.style.color)
+{alert(" Background color and font color can not be the same... ");}
+}
+
+function inputbgcolor()
+{
+var bgclr = document.getElementById("bgc").value ;
+document.body.style.backgroundColor = bgclr ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function inputtextcolor()
+{
+var tclr=document.getElementById("tc").value ;
+document.body.style.color = tclr ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function inputbgcolor()
+{
+var ipbgclr = document.getElementById("ipbgc").value ;
+document.body.style.backgroundColor = ipbgclr ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function inputtextcolor()
+{
+var iptclr=document.getElementById("iptc").value ;
+document.body.style.color = iptclr ;
+if(document.body.style.backgroundColor==document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+function inputtextsize()
+{
+var iptsze=document.getElementById("ipts").value ;
+document.body.style.fontSize = iptsze ;
+alert("You Have Choosen  "+iptsze+"  Size" );
+}
+
+function inputtextfamily()
+{
+var iptfmly=document.getElementById("iptf").value ;
+document.body.style.fontFamily = iptfmly ;
+alert("You Have Choosen  "+iptfmly+"  Font Family" );
+}
+function applychanges()
+{
+var ipbgclrb = document.getElementById("ipbgcb").value ;
+var iptclrb=document.getElementById("iptcb").value ;
+var iptszeb=document.getElementById("iptsb").value ;
+var iptfmlyb=document.getElementById("iptfb").value ;
+var ipttxtfb=document.getElementById("ipttfb").value ;
+alert(" All The Entered Changes Will Be Implemented... ");
+
+document.body.style.backgroundColor = ipbgclrb ;
+document.body.style.color = iptclrb ;
+document.body.style.fontSize = iptszeb ;
+document.body.style.fontFamily = iptfmlyb ;
+document.body.style.textTransform = ipttxtfb ;
+
+
+if (document.body.style.backgroundColor == document.body.style.color){alert(" Background color and font color can not be the same... ");}
+}
+
+console.log("The End");
+</script>
+</body>
+</html>

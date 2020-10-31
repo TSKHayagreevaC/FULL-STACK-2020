@@ -1,0 +1,167 @@
+<html>
+<head>
+<title> JS DOM HTML </title>
+</head>
+<body id="d2">
+<marquee direction="right"><h1> Java Script Document Object Model Highper Text Markup Language </h1></marquee>
+
+<h3> ALLERT BUTTONS USING JS DOM </h1>
+
+<button onclick="abc();"> Function </button>
+<button onclick="def();"> (a) Function .innerText  </button>
+<button onclick="ghi();"> (b) Function .innertext </button>
+<button onclick="jkl();"> (c) Function .innerHTML </button><br><br>
+
+<button onclick="body0();"> Body </button>
+<button onclick="body1();"> Body .innerText </button>
+<button onclick="body2();"> Body .innerText </button>
+<button onclick="body3();"> Body .innerHTML </button><br><br>
+
+<h3> HTML CONTENT CHANGE BUTTONS USING JS DOM </h1>
+
+<button onclick="mno();"> (a).Function .innerText---changed </button>
+<button onclick="pqr();"> (a).Function .innerHTML---changed </button><br><br>
+
+<button onclick="stu();"> Function .innerHTML---changed </button><br><br>
+
+<h1 id="d1"> WELCOME TO JS DOM <ul><li>HTML</li><li>CSS</li><li>JAVA SCRIPT</li></ul> </h1>
+
+<h2 id="d3"> WELCOME TO JS DOM <ol><li>HTML</li><li>CSS</li><li>JAVA SCRIPT</li></ol>WELCOME TO JS DOM </h2>
+
+<h3 id="d4"> WELCOME TO JS DOM </h3>
+
+<h4 id="d5"> WELCOME TO JS DOM </h4>
+<P>welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome<br>
+welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome<br>
+welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome</P>
+<h5> WELCOME TO JS DOM </h5>
+<P>welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome<br>
+welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome<br>
+welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome</P>	
+<h6> WELCOME TO JS DOM </h6>
+<P>welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome<br>
+welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome<br>
+welcome welcome welcome welcome welcome welcomewelcome welcome welcomewelcome welcome</P>
+
+BG COLOR:::<input type="text"   id="bgc" onchange="bgcolorchange();"><br>
+TEXT COLOR:::<input type="text"   id="tc" onchange="colorchange();"><br>
+
+<script>
+
+function abc()
+{
+var A = document.getElementById("d1");
+alert(A);
+}
+
+function def()
+{
+var B = document.getElementById("d1").innerText;
+alert(B);
+}
+
+function ghi()
+{
+var C = document.getElementById("d1");
+alert(C.innerText);
+}
+
+function jkl()
+{
+var D = document.getElementById("d1");
+alert(D.innerHTML);
+}
+
+function body0()
+{
+var E= document.getElementById("d2");
+alert(E);
+}
+
+function body1()
+{
+var F= document.getElementById("d2").innerText;
+alert(F);
+}
+
+function body2()
+{
+var G= document.getElementById("d2");
+alert(G.innerText);
+}
+
+function body3()
+{
+var H= document.getElementById("d2");
+alert(H.innerHTML);
+}
+
+function mno()
+{
+var I = document.getElementById("d3");
+I.innerText = " This is changed content using function mno(); and innerText ";
+}
+
+function pqr()
+{
+var J = document.getElementById("d3");
+J.innerHTML = "I am changed content using function pqr(); and inneHTML";
+}
+
+function stu()
+{
+document.getElementById("d4").innerHTML = "changed content using function stu(); and inneHTML";
+}
+
+
+function colorchange()
+{
+document.getElementById("d5") .style.backgroundcolor = "yellow" ;
+}
+
+
+/*function colorGreen()
+{
+document.body.style.backgroundcolor="green";
+}
+
+function colorBlue()
+{
+document.body.style.backgroundcolor="blue";
+}
+
+function colorRed()
+{
+document.body.style.backgroundcolor="red";
+}
+
+function colorYellow()
+{
+document.body.style.backgroundcolor="yellow";
+}
+
+function bgcolorGreen()
+{
+document.body.style.color="green";
+}
+
+function bgcolorBlue()
+{
+document.body.style.color="blue";
+}
+
+function bgcolorRed()
+{
+document.body.style.color="red";
+}
+
+function bgcolorYellow()
+{
+document.body.style.color="yellow";
+}*/
+
+console.log(" The End");
+</script>
+
+</body>
+</html>

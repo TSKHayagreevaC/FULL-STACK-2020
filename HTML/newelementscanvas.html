@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <title>canvas| new elements of html5</title>
+    <style>
+        body{background: yellowgreen;
+        color:brown;
+        font-family: Arial;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        ul{
+            padding:0%
+        }
+        #container{
+            background: skyblue;;
+            width: 1400px;
+            margin: 30px auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        nav{
+            height: 40px;
+            background: lightblue;
+        }
+        nav ul{
+            padding-top: 13px;
+            padding-left: 10px;
+        }
+        nav li{
+            list-style: none;
+            float: left;
+            padding-right: 20px;
+        }
+        main{
+            float: left;
+            width: 60%;
+        }
+        aside{
+            float: right;
+            width: 30%;
+            background: lightcoral;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .clr{
+            clear: both;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            background: chocolate;
+            margin-top: 30x;
+        }
+        #mycanvas{
+            border: 1px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>my webpage</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="newelementshome.html">home</a></li>
+                <li><a href="newelementsmedia.html">audio</a></li>
+                <li><a href="newelementscanvas.html">canvas</a></li>
+                <li><a href="newelementssvg.html">svg tag</a></li>
+                <li><a href="newelementswebstorage.html">web storage</a></li>
+                <li><a href="newelementsbox.html">drag & drop box</a></li>
+                <li><a href="newelementsgeolocation.html"></a>geolocation</li>
+            </ul>
+        </nav>
+        <main>
+            <h3>canvas tag</h3>
+            <canvas id="mycanvas" width="300" height="300"></canvas>
+            
+        </main>
+        <aside>
+            <h3>sidebar</h3>
+            <p>read this side text.read this side text.
+                read this side text.read this side text.
+                read this side text.read this side text.
+                read this side text.read this side text.
+            </p>
+        </aside>
+        <div class="clr"></div>
+        <footer>
+            <p>copyright &copy: 2020</p>
+        </footer>
+    </div>
+<script>
+    var c=document.getElementById('mycanvas');
+    var ctx= c.getContext('2d');
+
+   /*//rectangle creation
+    ctx.fillStyle="red";
+    ctx.fillRect(75,75,150,150);*/
+
+    /*//line creation
+    ctx.moveTo(0,0);
+    ctx.lineTo(150,150);
+    ctx.stroke();*/
+
+    /*//circle creation
+    ctx.beginPath();
+    ctx.arc(150,150,60,0,2*Math.PI);
+    ctx.fillStyle="#fff";
+    ctx.fill();
+    ctx.lineWidth=4;
+    ctx.strokeStyle='#000';
+    ctx.stroke();*/
+    
+    /*//Text creation
+    ctx.font='50px aerial';
+    ctx.strokeStyle='red'
+    ctx.strokeText('Canvas Tag',20,150);*/
+
+    /*//gradient
+    var grd=ctx.createLinearGradient(0,0,100,0);
+    grd.addColorStop(0, '#333');
+    grd.addColorStop(1, '#fff');
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,150);*/
+</script>    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Transition & Animation| css3</title>
+    <style>
+        #box1{
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            background: #000000;
+            /*transition: width 2s, height 2s;*/
+            transition: width 2s, height 4s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+            /*transition-timing-function: ease-in;
+            /*transition-timing-function: ease-out;*/
+        }
+        #box1:hover{
+            width: 300px;
+            height: 300px;
+        }
+        #box2{
+            color: #fff;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: red;
+            animation-name: colorchange;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+        }
+        /*
+        @keyframes colorchange {
+            from {background-color: red;}
+            to {background-color: green;}
+        }*/
+        
+        @keyframes colorchange{
+            0% {background-color: red; left:0px; top:0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: green; left: 200px; top: 200px;}
+            75% {background-color: blue; left: 0px; top: 200px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h1>Transition Box</h1>
+    </div>
+    <div id="box2">
+        <h1>Animation Box</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head><title>JAVA SCRIPT POPUP BOX</title><style>span{color:red}</style></head>
+<body>
+    <H1 align="center">JAVA SCRIPT POPUP BOXES</H1>
+    <button onclick="confirmit();"> click here to proceed with "confirm" further </button>
+    <button onclick="promptit();"> click here to proceed with "prompt" further </button>
+    <p id="info"></p>
+<SCript>
+    function confirmit()
+    {
+    var choice=window.confirm("press ok to continue and cancel to stop");
+    if (choice) {
+        alert("you have chosen to continue");
+        document.getElementById("info").innerHTML="you have choosen to visit me";
+        document.getElementById("info").style.color="green";document.getElementById("info").style.backgroundColor="yellow";} 
+    else {
+        alert("you have chosen to stop");
+        document.getElementById("info").innerHTML="you have choosen not to visit me";
+        document.getElementById("info").style.color="red";document.getElementById("info").style.backgroundColor="yellow";}
+    }
+    function promptit()
+    {
+        var user=prompt("Hey user,Enter Your Details Here","Please Enter YourName Here")
+        if(user != null && user!="" && user!= "Please Enter YourName Here")
+        {
+        document.getElementById("info").innerHTML="Hi, " +'<span>'+user+'</span>'+ " ,welcome to our Website";
+        document.getElementById("info").style.backgroundColor="yellow";
+        }
+
+    }
+</SCript>
+</body>
+</html>

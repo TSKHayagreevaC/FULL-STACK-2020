@@ -1,0 +1,95 @@
+body{
+    background: skyblue;
+}
+.menu{
+    width: 800px;
+    position: absolute;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    text-align: center;
+    border: 1px solid blue;
+    display: block;
+    float: left;
+    font: bold 20px calibri;
+    height: 100px;
+    line-height: 100px;
+    overflow: hidden;
+    padding-left: 10px;
+    position: absolute;
+    width: 250px;
+    z-index: 10000;
+    box-shadow: 2px 3px 5px red;
+   background: linear-gradient(to top,blue 0%, 
+                                lightblue 50%, 
+                                    lightblue 51%, 
+                                    blue 100%);
+}
+.menu ul li:hover{
+    background: radial-gradient(circle ,yellow 0%,
+                                    lightyellow 50%, 
+                                    lightyellow 51%,
+                                    yellow 100%);
+}
+.menu ul li:first-child{
+    border-radius: 4px 4px 4px 4px;
+}
+.menu ul li:last-child{
+    border-radius: 4px 4px 4px 4px;
+}
+.menu ul li#a{
+    display: block;
+    text-decoration: none;
+    color: red;
+    background-color: salmon;
+}
+.menu ul li#b{
+    margin-left: 250px;
+    color: red;
+    background-color: seagreen;
+}
+.menu ul li#c{
+    background-color: yellow;
+    color: red;
+    margin-left: 500px;
+}
+.menu ul li div{
+    text-align: left;
+    font: normal 15px arial;
+    line-height: 50px;
+    margin: 10px 10px;
+}
+.menu ul li div a{
+    display: inline;
+}
+.menu ul li div a:hover{
+    text-decoration: underline;
+}
+.menu ul li div hr{
+    border: none;
+    border-top: 5px solid red;
+    margin: 5px 5px;
+    width: 95%;
+}
+.menu ul li:hover:target{
+    /*display: inherit;*/
+    padding: 0;
+    width: 250px;
+    padding-left: 10px;
+    opacity: .80;
+    transition:height 1s ease-in-out;
+}
+.menu ul li#a:hover:target{
+    height: 670px;
+    background:salmon;
+}
+.menu ul li#b:hover:target{
+    height: 700px;
+    background: limegreen;
+}
+.menu ul li#c:hover:target{
+    height: 450px;
+    background: yellow;
+}

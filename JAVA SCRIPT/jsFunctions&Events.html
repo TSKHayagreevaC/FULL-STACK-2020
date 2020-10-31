@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>java script functions and events</title>
+</head>
+<body>
+    <h1>java script functions and events</h1>
+    <button ondblclick="getdate();">get date on double clicl</button>
+    <h1 onmouseout="getdate();">get date on mouse out</h1>
+    <h1 onmouseover="getdate();">get date on mouse over</h1>
+    <button onclick="getdate();">get date on single click</button>
+    <h2 id="showdate"></h2>
+
+    <h1 align="center">Form</h1>
+    <form onsubmit="submitform();" action="">
+        <div>
+            <label for="">name</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="">email</label>
+            <input type="text" id="email">
+        </div>
+            <input type="submit" value="submit">
+    </form>
+
+    <h1 align="center">Form For events</h1>
+    <form id="myform" action="">
+        <div>
+            <label for="">name</label>
+            <input type="text" id="name" onblur="test();">
+        </div>
+        <div>
+            <label for="">email</label>
+            <input type="text" id="email" onfocus="tests();">
+        </div>
+            <input type="submit" value="submit">
+    </form>
+
+
+    <script>
+        /*function sayhello()
+        {
+            alert('hello');
+        }
+        sayhello();*/
+
+        /*function sayhello(greeting)
+        {
+            alert(greeting);
+        }
+        sayhello('hello world');*/
+
+        /*function sayhello(greeting,name)
+        {
+            alert(greeting+'   '+name);
+        }
+        sayhello('hello','sriram');*/
+
+        /*function sayhello(greeting,name)
+        {
+            alert(greeting+'   '+name);
+        }
+        sayhello('hello',);*/
+
+        /*function sayhello(greeting,name='rajesh')
+        {
+            alert(greeting+'   '+name);
+        }
+        sayhello('hello',);*/
+
+        /*function getsum(a,b)
+        {
+            alert(a + b);
+        }
+        var sum = getsum(4,5);
+        console.log(sum);*/
+
+
+       /*function getsum(a,b)
+        {
+            return a + b;
+        }
+        var sum = getsum(4,5);
+        console.log('The answer is:  '+sum);*/
+
+        /*function getdate()
+        {   
+            var d = new Date();
+            alert('date is:  '+d.getDate());
+            alert('day is:  '+d.getDay());
+            alert('month is:  '+d.getMonth());
+            alert('year is:  '+d.getFullYear());
+            alert('hour is:  '+d.getHours());
+            alert('seconds are:  '+d.getMilliseconds());
+            alert('minutes are:  '+d.getMinutes());
+            document.getElementById('showdate').innerHTML = d;
+        }*/
+
+        function getdate()
+        {   
+            var d = new Date();
+            document.getElementById('showdate').innerHTML = d;
+        }
+
+        /*function submitform()
+        {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            alert('name entered by you is:  '+name+'& email entered by you is:  '+email);
+        }*/
+
+        function submitform(e)
+        {
+            e.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            console.log(email);
+        }
+
+        function test()
+        {
+            alert('blur');
+        }
+
+        function tests()
+        {
+            alert('onfocus');
+        }
+
+        document.getElementById('myform').addEventListener('submit',submitform, false);
+    </script>
+</body>
+</html>

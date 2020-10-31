@@ -1,0 +1,28 @@
+h1{font-sie:100px;
+	color:#11ff33;}
+caption{color : blue; font-size : 50px;}
+table{ background-color:lightyellow; 
+	color: rgb(100,120,100) ;
+	border:solid 5px red;
+	border-collapse:collapse;
+	width:600px;
+	font-size:50px;}
+table:hover{background-color:skyblue;}
+td,th{ border:solid 3px green ;}
+th{color:green; 
+	height:120px;
+	text-align:right;
+	vertical-align:top;}
+th:hover{background-color:red;}
+td{color:red; 
+	height:75px;
+	text-align:centre;
+	vertical-align:bottom;
+	text-transform:lowercase;
+	text-decoration:underline;}
+td:hover{background-color:yellow;}
+tr:nth-child(even) {background-color:rgb(100,50,120);}
+tr:nth-child(odd) {background-color:rgb(100,120,120);}
+td:nth-child(even) {background-color:rgb(120,100,120);}
+td:nth-child(odd) {background-color:rgb(200,100,120);}
+

@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <title>media| new elements of html5</title>
+    <style>
+        body{background: yellowgreen;
+        color:brown;
+        font-family: Arial;
+        }
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+        ul{
+            padding:0%
+        }
+        #container{
+            background: skyblue;;
+            width: 1400px;
+            margin: 30px auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        nav{
+            height: 40px;
+            background: lightblue;
+        }
+        nav ul{
+            padding-top: 13px;
+            padding-left: 10px;
+        }
+        nav li{
+            list-style: none;
+            float: left;
+            padding-right: 20px;
+        }
+        main{
+            float: left;
+            width: 60%;
+        }
+        aside{
+            float: right;
+            width: 30%;
+            background: lightcoral;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .clr{
+            clear: both;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            background: chocolate;
+            margin-top: 30x;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>my webpage| media files</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="newelementshome.html">home</a></li>
+                <li><a href="newelementsmedia.html">audio</a></li>
+                <li><a href="newelementscanvas.html">canvas</a></li>
+                <li><a href="newelementssvg.html">svg tag</a></li>
+                <li><a href="newelementswebstorage.html">web storage</a></li>
+                <li><a href="newelementsbox.html">drag & drop box</a></li>
+                <li><a href="newelementsgeolocation.html"></a>geolocation</li>
+            </ul>
+        </nav>
+        <main>
+            <h3>media iles</h3>
+                <video src="C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\audio & video files\SampleVideo.mp4" controls autoplay loop>
+                    This browser do not support this video 
+                </video>
+            </article>
+            <article>
+                <h3>audio files</h3>
+                <audio src="C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\audio & video files\jan.mp3" controls autoplay loop>
+                    This browser do not support this audio
+                </audio>
+        </main>
+        <aside>
+            <h3>audio autoplay using java script</h3>
+            <audio id="myaudio" src="C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\audio & video files\jan.mp3">
+                This browser do not support this audio
+            </audio>
+            <div>
+                <button onclick= "document.getElementById('myaudio').play()"> play </button>
+                <button onclick= "document.getElementById('myaudio').pause()"> pause </button>
+                <button onclick= "document.getElementById('myaudio').volume+=0.1"> +volume </button>
+                <button onclick= "document.getElementById('myaudio').volume-=0.1"> -volume </button>
+            </div>
+            <h3>video autoplay using java script</h3>
+            <video id="myvideo" src="C:\Users\SRIKANTH HAYAGREEVA\OneDrive\Desktop\FULL STACK 2020\audio & video files\SampleVideo.mp4">
+                This browser do not support this video 
+            </video>
+            <div>
+                <button onclick= "document.getElementById('myvideo').play()"> play </button>
+                <button onclick= "document.getElementById('myvideo').pause()"> pause </button>
+                <button onclick= "document.getElementById('myvideo').volume+=0.1"> +volume </button>
+                <button onclick= "document.getElementById('myvideo').volume-=0.1"> -volume </button>
+            </div>
+        </aside>
+        <div class="clr"></div>
+        <footer>
+            <p>copyright &copy: 2020</p>
+        </footer>
+    </div>
+<script>
+   var a=document.getElementById('myaudio');
+   v.play();
+   var v=document.getElementById('myvideo')
+   a.play();
+</script>    
+</body>
+</html>

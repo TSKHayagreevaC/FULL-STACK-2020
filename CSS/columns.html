@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Columns</title>
+    <style>
+        article{
+            column-count: 3;
+            column-gap: 20px;
+            /*column-rule-style: solid;
+            column-rule-width: 1px;
+            column-rule-color: coral;*/
+            column-rule: 1px solid red;
+        }
+        article h1{
+            column-span: all;
+        }
+        .textbox1{
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            overflow: auto;
+            /*resize: horizontal;
+            resize: vertical;*/
+            resize: both;
+        }
+        .textbox2{
+            margin: 20px;
+            padding: 30px;
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            outline: 1px solid red;
+            outline-offset: 10px;
+        }
+        .flex-container{
+            display: flex;
+            /*flex-direction: column-reverse;*/
+            /*flex-direction: row-reverse;*/
+            /*justify-content: center;*/
+            /*justify-content: space-between;*/
+            justify-content: space-around;
+           width: 400px;
+           height: 250px;
+           background-color: #000; 
+        }
+        .flex-item{
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        .first{
+            order:-1;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Title of The Paragraph</h1>
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph.
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph.
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph,
+        This is paragraph, This is paragraph.
+    </article>
+    <br><br>
+    <div class="textbox1">
+        Try And Resize This Element.
+    </div>
+    <br><br>
+    <div class="textbox2">
+        This Element Has Ten Pixel Outline.
+    </div>
+    <br><br>
+    <div class="flex-container">
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item first">flex item 2</div>
+        <div class="flex-item">flex item 3</div>
+    </div>
+</body>
+</html>

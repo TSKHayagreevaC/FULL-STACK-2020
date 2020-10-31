@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>java script form validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">form with validation</h1>
+        <form id="redform">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword2">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <div class="alert" id="msg"></div>
+    </div>
+<script>
+    function register(e)
+    {
+       e.preventDefault();
+       console.log('submitted...');
+
+       var email = document.getElementById('exampleInputEmail1').value;
+       var password = document.getElementById('exampleInputPassword1').value;
+       var password2 = document.getElementById('exampleInputPassword2').value;
+       var msg = document.getElementById('msg');
+       msg.innerHTML = 'user registered with email  '+email;
+       if(email =='' || password == '')
+       {
+        msg.className = "alert alert-danger";
+        msg.innerHTML = 'please fill all fields...'; 
+       }else
+       {
+           if(email.length < 4)
+           {
+            msg.className = "alert alert-danger";
+            msg.innerHTML = 'email must be more than four characters...'; 
+           }else
+           {
+               var atpos = password.indexOf("@");
+               var dotpos = password.lastIndexOf(".");
+               if(atpos < 1 || dotpos < atpos+2 || dotpos+2 >=password.length)
+               {
+                msg.className = "alert alert-danger";
+                msg.innerHTML = 'please enter valid password';
+               }else
+               {
+                   if(password != password2)
+                   {
+                    msg.className = "alert alert-danger";
+                    msg.innerHTML = 'password is NOT matching...';  
+                   }else
+                   {
+                    msg.className = "alert alert-success";
+                    msg.innerHTML = 'user registered with email  '+email;
+                   }
+               }
+           }
+       }
+
+    }
+    document.getElementById('redform').addEventListener('submit', register, false);
+</script>
+</body>
+</html>
